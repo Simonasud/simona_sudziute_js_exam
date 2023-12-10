@@ -32,3 +32,16 @@ function filterDogOwners(usersArray) {
 
 const dogOwners = filterDogOwners(users);
 console.log("Dog Owners:", dogOwners);
+
+function filterAdults(usersArray) {
+  const adults = [];
+  for (const user of usersArray) {
+    if (user.age >= 18) {
+      adults.push(user);
+    }
+  }
+  return adults;
+}
+
+const adults = filterAdults(users);
+console.log("Adults:", adults);
