@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
+
 .wrapper {
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
@@ -18,12 +19,63 @@
 
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  background-color: #ccc;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.container h1 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 45px;
+}
+#btn {
+  background-color: #333;
+  color: #ccc;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.container h1 {
-  margin-top: 50px;
-  color: #333;
+#output ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.car-card {
+  list-style: none;
+  width: 30%;
+  height: 180px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: lightgrey;
+  text-align: center;
+  overflow: hidden;
+}
+
+#output h2 {
+  padding-bottom: 20px;
+  font-style: italic;
+}
+#output p {
+  font-size: 18px;
+}
+#output p:hover {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .car-card {
+    width: 46%;
+    overflow: scroll;
+  }
 }
