@@ -48,19 +48,11 @@ function createCarListItem(car) {
   brandEl.textContent = car.brand;
   liEl.append(brandEl);
 
-  const modelsEl = document.createElement("p");
-  modelsEl.style.fontWeight = "bold";
-  modelsEl.style.fontSize = "24px";
-  modelsEl.style.color = "#333";
-  modelsEl.style.textAlign = "left";
-
   car.models.forEach((model) => {
     const modelPEl = document.createElement("p");
     modelPEl.textContent = model;
-    modelsEl.append(modelPEl);
+    liEl.append(modelPEl);
   });
-
-  liEl.append(modelsEl);
 
   return liEl;
 }
