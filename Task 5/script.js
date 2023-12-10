@@ -21,5 +21,14 @@ const users = [
 ];
 
 function filterDogOwners(usersArray) {
-  return usersArray.filter((user) => user.hasDog);
+  const dogOwners = [];
+  for (const user of usersArray) {
+    if (user.hasDog) {
+      dogOwners.push(user);
+    }
+  }
+  return dogOwners;
 }
+
+const dogOwners = filterDogOwners(users);
+console.log("Dog Owners:", dogOwners);
