@@ -15,7 +15,10 @@ const carsUrl = "cars.json";
 const els = {
   outputEl: document.getElementById("output"),
   btnEl: document.getElementById("btn"),
+  ulEl: document.createElement("ul"),
 };
+
+els.outputEl.append(els.ulEl);
 
 els.btnEl.addEventListener("click", async () => {
   try {
@@ -31,19 +34,13 @@ els.btnEl.addEventListener("click", async () => {
 function generateCars(data) {
   data.forEach((car) => {
     const liEl = createCarListItem(car);
-    els.outputEl.append(liEl);
+    els.ulEl.append(liEl);
   });
 }
 
 function createCarListItem(car) {
-  const ulEl = document.createElement("ul");
-  ulEl.classList.add("car-list");
-
   const liEl = document.createElement("li");
   liEl.classList.add("car-card");
-
-  ulEl.append(liEl);
-  els.outputEl.append(ulEl);
 
   const brandEl = createBrandElement(car.brand);
   liEl.append(brandEl);
