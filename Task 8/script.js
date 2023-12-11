@@ -33,8 +33,8 @@ class Calculator {
 
 const calc = new Calculator();
 
-console.log(calc.sum(5, 3));
-console.log(calc.subtraction(7, 2));
-console.log(calc.multiplication(4, 6));
-console.log(calc.division(10, 2));
-console.log(calc.division(8, 0));
+// console.log(calc.sum(5, 3));
+// console.log(calc.subtraction(7, 2));
+// console.log(calc.multiplication(4, 6));
+// console.log(calc.division(10, 2));
+// console.log(calc.division(8, 0));
