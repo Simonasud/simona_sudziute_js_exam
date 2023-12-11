@@ -51,32 +51,29 @@
 }
 .car-card {
   list-style: none;
-  width: 60%;
-  height: 180px;
-  margin: 15px;
+  border: 1px solid #ddd;
   padding: 15px;
-  border: 1px solid #ccc;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: lightgrey;
-  text-align: center;
-  overflow: hidden;
+}
+.car-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.carModels h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
-#output h2 {
-  padding-bottom: 20px;
-  font-style: italic;
-  overflow: hidden;
-}
-#output p {
-  font-size: 18px;
-}
-#output p:hover {
-  font-size: 22px;
-}
-
-@media screen and (min-width: 768px) {
-  .car-card {
-    width: 46%;
-    overflow: scroll;
-  }
+.load-more-button {
+  background-color: rgb(53, 53, 227);
+  color: #ccc;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-top: 15px;
 }

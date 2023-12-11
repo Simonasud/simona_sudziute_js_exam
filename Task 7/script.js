@@ -24,5 +24,5 @@ function showObjectKeys(audiObj) {
   return keysArray;
 }
 
-const key = showObjectKeys(audi);
-console.log("Keys:", key);
+// const key = showObjectKeys(audi);
+// console.log("Keys:", key);

@@ -36,8 +36,14 @@ function generateCars(data) {
 }
 
 function createCarListItem(car) {
+  const ulEl = document.createElement("ul");
+  ulEl.classList.add("car-list");
+
   const liEl = document.createElement("li");
   liEl.classList.add("car-card");
+
+  ulEl.append(liEl);
+  els.outputEl.append(ulEl);
 
   const brandEl = createBrandElement(car.brand);
   liEl.append(brandEl);
