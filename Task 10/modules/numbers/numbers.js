@@ -1,5 +1,5 @@
-let one = 1;
-let two = 2;
-let three = 3;
-let four = 4;
-let five = 5;
+export const one = 1;
+export const two = 2;
+export const three = 3;
+export const four = 4;
+export const five = 5;

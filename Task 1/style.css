@@ -27,6 +27,7 @@ form {
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 #search {
@@ -52,6 +53,24 @@ form {
   color: #fff;
 }
 
+#output {
+  display: none;
+  max-width: 80%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 50px auto;
+
+}
+
+#output li {
+  font-size: 1.1em;
+  color: #000;
+  padding-top: 10px;
+  list-style: none;
+  font-size: 1.1em;
+}
+
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
@@ -59,7 +78,9 @@ form {
   }
 
   #search,
-  #submit-btn {
+  #submit-btn,
+  #output{
     font-size: 2em;
   }
+
 }
