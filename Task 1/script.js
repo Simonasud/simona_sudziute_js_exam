@@ -24,7 +24,14 @@ const els = {
 
 function sukurtiEl(label, value) {
   const liEl = document.createElement("li");
-  liEl.innerHTML = `<strong>${label}:</strong> ${value.toFixed(2)}`;
+  const strongEl = document.createElement("strong");
+  strongEl.textContent = label + ":";
+  liEl.appendChild(strongEl);
+
+  const spanEl = document.createElement("span");
+  spanEl.textContent = value.toFixed(2);
+  liEl.appendChild(spanEl);
+
   return liEl;
 }
 
